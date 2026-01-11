@@ -1,0 +1,16 @@
+{
+  "name": "clode",
+  "owner": {
+    "name": "Alex Eldeib",
+    "email": "alexeldeib@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "clode",
+      "source": "./",
+      "description": "Personal productivity plugin with task management, coding practices, and example scaffolds",
+      "version": "0.1.0",
+      "category": "productivity"
+    }
+  ]
+}

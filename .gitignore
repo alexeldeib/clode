@@ -1,0 +1,11 @@
+# Plugin settings (user-specific)
+.claude/*.local.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~
