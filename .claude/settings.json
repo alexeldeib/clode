@@ -7,7 +7,34 @@
     "ENABLE_TOOL_SEARCH": "true",
     "USE_BUILTIN_RIPGREP": "0"
   },
+  "additionalDirectories": [
+    "/Users/alexeldeib/code/claude",
+    "/Users/alexeldeib/.claude"
+  ],
   "includeCoAuthoredBy": false,
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "dot hook session"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "TodoWrite",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "dot hook sync"
+          }
+        ]
+      }
+    ]
+  },
   "permissions": {
     "allow": [
       "Read(.*)",
